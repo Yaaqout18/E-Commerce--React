@@ -1,0 +1,103 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer-logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.footer-logo p{
+  color: #171717;
+  font-size: 38px;
+  font-weight: 600;
+}
+.footer-logo .logo-icon{
+  color: #171717;
+  font-size: 38px;
+}
+.footer-links{
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  color: #252525;
+  font-size: 20px;
+}
+.footer-links li{
+  cursor: pointer;
+}
+.footer-socials-icon{
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icons-container{
+  padding: 10px;
+  padding-bottom: 6px;
+  background: #fbfbfb;
+  border: 1px solid #ebebeb;
+}
+.footer-copyright{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #a1a1a1;
+  font-size: 20px;
+}
+.footer-copyright hr{
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  height: 3px;
+  background: #c7c7c7;
+}
+.footer-copyright .yaaqout-logo{
+  color: #000;
+  cursor: pointer;
+}
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale:0.4;
+  }
+  to{
+    opacity: 1;
+    scale:1;
+  }
+}
+  /* =================== #Media queries (Medium Devices) ============ */
+  @media(max-width:1024px){
+    .footer-socials-icon{
+      gap: 40px;
+    }
+    .footer-icon{
+      font-size: 24px;
+    }
+  }
+  
+  /* =================== #Media queries (Small Devices) ============ */
+  
+  @media(max-width: 600px){
+    .footer-links{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 70px;
+      font-size: 20px;
+    }
+    .footer-copyright p{
+      margin: 0 18px 100px 18px;
+    }
+    .yaaqout-logo{
+      margin-left: 9px;
+    }
+  }

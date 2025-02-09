@@ -1,0 +1,128 @@
+.productDisplay{
+  display: flex;
+  margin: 0 170px;
+}
+.productDisplay-left{
+  display: flex;
+  gap: 17px;
+}
+.productDisplay-img-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.productDisplay-img-list img{
+  height: 163px;
+}
+.productDisplay-main-img{
+  width: 586px;
+  height: 700px;
+}
+.productDisplay-right{
+  margin: 0 70px;
+  display: flex;
+  flex-direction: column;
+}
+  .productDisplay-right h1{
+    color: #3d3d3d;
+    font-size: 40px;
+    font-weight: 700;
+  }
+.productDisplay-right-stars{
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  gap: 5px;
+  color: #ee9a12;
+  font-size: 16px;
+}
+.productDisplay-right-prices{
+  display: flex;
+  margin: 40px 0;
+  gap: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.productDisplay-right-price-old{
+  text-decoration: line-through;
+  color: #818181;
+}
+.productDisplay-right-price-new{
+  color: #ee9a12;
+}
+.productDisplay-right-kind h1{
+  margin-top: 55px;
+  color: #656565;
+  font-size: 20px;
+  font-weight: 600;
+}
+.productDisplay-right-kinds{
+  display: flex;
+  margin: 30px 0;
+  gap: 20px;
+}
+.productDisplay-right-kinds div{
+  padding: 18px 24px;
+  background: #fbfbfb;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.productDisplay-right button{
+  padding: 20px 40px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600px;
+  color: #fff;
+  background: #ee9a12;
+  margin-bottom: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.productDisplay-right-category{
+  margin-top: 10px;
+}
+.productDisplay-right-category span{
+  font-weight: 600;
+}
+
+
+  /* =================== #Media queries (Medium Devices) ============ */
+  @media(max-width:1024px){
+    .productDisplay{
+      flex-direction: column;
+      margin: 0 80px;
+    }
+    .productDisplay-img-list img{
+      height: 120px;
+    }
+    .productDisplay-main-img{
+      width: 450px;
+      height: 500px;
+    }
+    .productDisplay-right-description{
+      font-size: 20px;
+    }
+  }
+  
+  /* =================== #Media queries (Small Devices) ============ */
+  
+  @media(max-width: 600px){
+    .productDisplay{
+      flex-direction: column;
+      margin: 0 20px;
+    }
+    .productDisplay-img-list img{
+      height: 50px;
+    }
+    .productDisplay-main-img{
+      width: 270px;
+      height: 300px;
+    }
+    .productDisplay-right h1{
+      font-size: 22px;
+      font-weight: 700;
+    }
+  }
