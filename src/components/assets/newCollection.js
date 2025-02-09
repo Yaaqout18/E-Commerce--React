@@ -1,11 +1,11 @@
 import col1_img from './pro1_img.jpg'
 import col2_img from './pro2_img.jpg'
 import col3_img from './pro3_img.jpg'
-import col4_img from './col4_img.jpg'
+import col4_img from './pro4_img.jpg'
 import col5_img from './pro5_img.jpg'
 import col6_img from './pro6_img.jpg'
 import col7_img from './pro7_img.jpg'
-import col8_img from './col8_img.avif'
+import col8_img from './pro8_img.jpg'
 
 
 
